@@ -35,6 +35,8 @@ public class CarsFragment extends Fragment {
     public GridLayoutManager gridLayoutManager;
     private CarsViewModel model;
     public CarsFragment() {
+
+
     }
 
 
