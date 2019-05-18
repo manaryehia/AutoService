@@ -37,6 +37,8 @@ public class CarsFragment extends Fragment {
     public CarsFragment() {
     }
 
+
+
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
