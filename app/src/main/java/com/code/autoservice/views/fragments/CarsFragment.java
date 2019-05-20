@@ -44,22 +44,19 @@ public class CarsFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        init();
  model= ViewModelProviders.of(this).get(CarsViewModel.class);
         CarsViewModel.getCarsOnlineFromRepo()
                 .observe(this, new Observer<CarsOnline>() {
                     @Override
                     public void onChanged(@Nullable CarsOnline response) {
                         if (response != null) {
-                            init();
                             List<Car> cars = response.getCars();
+                            progress.setVisibility(View.GONE);
                             gridLayoutManager = new GridLayoutManager(getContext(), 2);
                             recyclerView.setLayoutManager(gridLayoutManager);
                             adapter = new RecyclerViewAdapter(getContext(),cars);
                             recyclerView.setAdapter(adapter);
-
-
-
-
 
                         }
                     }
@@ -73,7 +70,6 @@ public class CarsFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater , @Nullable ViewGroup container , @Nullable Bundle savedInstanceState) {
         view=inflater.inflate(R.layout.car_fragment,container,false);
-        init();
     return view;
     }
     private void init(){

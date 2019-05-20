@@ -6,14 +6,14 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:colorPrimaryDark">#F24132</item>
+        <item name="android:colorPrimaryDark">#FD7133</item>
     </style>
 
     <style name="CarInfo" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:colorPrimaryDark">#F24132</item>
+        <item name="android:colorPrimaryDark">#FD7133</item>
         <item name="android:windowContentTransitions">true</item>
         <item name="android:windowAllowEnterTransitionOverlap">true</item>
         <item name="android:windowAllowReturnTransitionOverlap">true</item>
@@ -23,5 +23,9 @@
 
 
 
+    </style>
+
+    <style name="splash" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:background">#fff</item>
     </style>
 </resources>
