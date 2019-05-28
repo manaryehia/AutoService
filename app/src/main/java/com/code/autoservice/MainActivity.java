@@ -44,8 +44,5 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.getTabAt(3).setIcon(R.drawable.maps_tab);
         tabLayout.getTabAt(0).setIcon(R.drawable.menu_tab);
         tabLayout.getTabAt(4).select();
-
-
-
     }
 }

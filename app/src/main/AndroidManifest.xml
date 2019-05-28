@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.code.autoservice">
 <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/carlogo"
@@ -15,7 +20,8 @@
             <!--<category android:name="android.intent.category.LAUNCHER" />-->
             <!--</intent-filter>-->
         </activity>
-        <activity android:name=".views.activities.LoginActivity">
+        <activity android:name=".views.activities.LoginActivity"
+            android:theme="@style/login">
             <!--<intent-filter>-->
                 <!--<action android:name="android.intent.action.MAIN" />-->
 
@@ -23,7 +29,8 @@
             <!--</intent-filter>-->
 
         </activity>
-        <activity android:name=".views.activities.RegisterActivity">
+        <activity android:name=".views.activities.RegisterActivity"
+            android:theme="@style/register">
 
         </activity>
         <activity android:name=".views.activities.Splash"
@@ -38,6 +45,8 @@
         <activity android:name=".views.activities.CarInfo"
             android:theme="@style/CarInfo">
         </activity>
+        <activity android:name=".views.activities.NearPlacesActivity"/>
+        <activity android:name=".views.activities.MyCarListActivity"/>
     </application>
 
 </manifest>
